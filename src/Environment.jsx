@@ -6,8 +6,6 @@ import {
     Vector3,
     HemisphericLight, 
     ActionManager,
-    SceneLoader,
-    Mesh,
     MeshBuilder,
     PhysicsShapeType
 } from "@babylonjs/core"
@@ -70,6 +68,9 @@ class Environment{
     }
 
     async importMesh(item, scale){
+
+        const { SceneLoader, Mesh } = await import('@babylonjs/core')
+
         const { meshes } = await SceneLoader.ImportMeshAsync("", "./models/", item, this.scene)
 
         const children = meshes[0].getChildMeshes()
