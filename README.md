@@ -1,4 +1,5 @@
 <h1>Third Person Action Game</h1>
+Note: this is still in the early stages of development, will be working on this over a longer stretch of time.
 
 <h2>Playable At</h2> 
 https://master--dav-sandhu-babylonjs-game.netlify.app/
